@@ -1,6 +1,6 @@
-# Ansible role: Fedora firewall port
+# Ansible role: Fedora Docker
 
-Ensures that firewall is installed and running, then ensures that given port on firewall is open.
+Ensures that Docker engine is installed and running as a systemd service. Also installs Docker client.
 
 ## Compatibility
 
@@ -8,15 +8,15 @@ This playbook has been tested against Fedora 25.
 
 ## Installation 
 
-    ansible-galaxy install hekonsek.fedora-firewall-port,0.0
+    ansible-galaxy install hekonsek.fedora-docker,0.0
 
 ## Example playbook
 
-    # Open port 80
     - hosts: localhost
+      remote_user: root
       roles:
-        - { role: hekonsek.fedora-firewall-port,0.0, vars: {targetPort: 80}  }
+        - { role: "hekonsek.fedora-docker,0.0" }
 
 ## License
 
-Apache 2.0# ansible-role-fedora-docker
+Apache 2.0
