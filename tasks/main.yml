@@ -1,11 +1,5 @@
-- name: Download Docker installer
-  get_url:
-    url: https://get.docker.com
-    dest: /tmp/get-docker
-    mode: 0555
-
 - name: Install Docker
-  shell: /tmp/get-docker creates=/usr/bin/docker
+  shell: dnf install -y https://download.docker.com/linux/fedora/25/x86_64/stable/Packages/docker-ce-17.06.0.ce-1.fc25.x86_64.rpm
 
 - name: Make sure Docker is running
   systemd:
@@ -14,5 +8,5 @@
     enabled: yes
     daemon_reload: yes
 
-- name: Add user 'fedora' to group Docker
+- name: Add user 'fedora' to group 'docker'
   user: name=fedora groups=docker append=yes
