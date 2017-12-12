@@ -1,10 +1,10 @@
 # Ansible role: Fedora Docker
 
-Ensures that Docker engine (17.06) is installed and running as a systemd service. Also installs Docker client.
+Ensures that Docker engine (17.09) is installed and running as a systemd service. Also installs Docker client.
 
 ## Compatibility
 
-This playbook has been tested against Fedora 26.
+This playbook has been tested against Fedora 27.
 
 ## Installation 
 
