@@ -10,6 +10,6 @@ galaxy_info:
   platforms:
   - name: Fedora
     versions:
-    - 26
+    - 26 # 27, but Galaxy doesn't support it yet
 
   galaxy_tags: ["fedora", "docker"]

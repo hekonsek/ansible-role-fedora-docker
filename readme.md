@@ -8,14 +8,14 @@ This playbook has been tested against Fedora 26.
 
 ## Installation 
 
-    ansible-galaxy install hekonsek.fedora-docker,0.1
+    ansible-galaxy install hekonsek.fedora-docker,0.2
 
 ## Example playbook
 
     - hosts: localhost
       remote_user: root
       roles:
-        - { role: "hekonsek.fedora-docker,0.1" }
+        - { role: "hekonsek.fedora-docker,0.2" }
 
 ## License
 
