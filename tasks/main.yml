@@ -1,5 +1,7 @@
 - name: Install Docker
-  shell: dnf install -y https://download.docker.com/linux/fedora/26/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.fc26.x86_64.rpm
+  dnf:
+    name: docker
+    state: present
 
 - name: Make sure Docker is running
   systemd:

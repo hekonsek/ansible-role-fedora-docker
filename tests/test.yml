@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
-  remote_user: root
+  become: true
   roles:
-    - { role: ../fedora-docker }
+    - { role: ../ansible-role-fedora-docker }
